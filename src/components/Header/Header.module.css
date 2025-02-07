@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    color: var(--c-text-1);
+    color: var(--text-color);
     max-width: calc(var(--layout-max-width) - var(--nav-height));
     height: var(--nav-height);
     pointer-events: auto;
@@ -17,13 +17,13 @@
   align-items: center;
   font-size: 16px;
   font-weight: 600;
-  color: var(--c-text-1);
+  color: var(--text-color);
   height: var(--nav-height);
 }
 
 .themeSwitch {
   font-size: 14px;
-  color: var(--c-text-1);
+  color: var(--text-color);
   background-color: var(--button-bg);
 }
 .themeSwitch:focus {

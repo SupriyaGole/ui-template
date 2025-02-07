@@ -14,7 +14,7 @@
   --bg-color: #101010;
   --layout-max-width: 1440px;
   --nav-height: 64px;
-  --c-text-1: #ffffff;
+  --text-color: #ffffff;
   --c-text-2: #98989f;
   --c-brand-lighter: #9499ff;
   --nav-logo-height: 24px;
@@ -23,7 +23,7 @@
 }
 
 [data-theme="light"] {
-  --c-text-1: #101010;
+  --text-color: #101010;
   --bg-color: #ffffff;
   --button-bg: #f9f9f9;
 }
@@ -33,7 +33,7 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
-  color: var(--c-text-1);
+  color: var(--text-color);
   background-color: var(--bg-color);
 }
 
