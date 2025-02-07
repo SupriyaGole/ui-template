@@ -1,15 +1,12 @@
-import Layout from '../Layout/Layout';
+import Layout from "../Layout/Layout";
 
 const Home = () => {
   return (
     <Layout>
-      <div className="card">
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <p>Content</p>
+      <p>Content 2</p>
     </Layout>
-  )
+  );
 };
 
 export default Home;
