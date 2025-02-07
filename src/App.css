@@ -3,8 +3,14 @@
   --layout-max-width: 1440px;
   --nav-height: 64px;
   --c-text-1: rgba(255, 255, 245, .86);
+  --c-text-2: #98989f;
   --c-brand-lighter: #9499ff;
   --nav-logo-height: 24px;
+  --z-index-footer: 10;
+}
+
+p {
+  margin: 0;
 }
 
 @keyframes logo-spin {

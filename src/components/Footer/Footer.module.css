@@ -1,0 +1,25 @@
+.footer {
+  position: relative;
+  z-index: var(--z-index-footer);
+  border-top: 1px solid #262626;
+  background: radial-gradient(circle at top center, #0f151a 30%, #000 80%);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: var(--layout-max-width);
+  text-align: center;
+}
+
+.message {
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--c-text-2);
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 32px;
+  }
+}
