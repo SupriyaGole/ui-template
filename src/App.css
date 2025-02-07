@@ -1,29 +1,3 @@
 #root {
   width: 100%;
-  --layout-max-width: 1440px;
-  --nav-height: 64px;
-  --c-text-1: rgba(255, 255, 245, .86);
-  --c-text-2: #98989f;
-  --c-brand-lighter: #9499ff;
-  --nav-logo-height: 24px;
-  --z-index-footer: 10;
-}
-
-p {
-  margin: 0;
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
 }
