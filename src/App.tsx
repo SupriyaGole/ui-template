@@ -1,17 +1,16 @@
-import viteLogo from '/vite.svg'
-import './App.css'
-import Layout from './components/Layout/Layout'
+import { Route, Routes } from "react-router-dom";
+
+import "./App.css";
+import Home from "./components/Home/Home";
 
 function App() {
   return (
-    <Layout>
-      <div className="card">
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </Layout>
-  )
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<Home />} />
+      <Route path="/contact" element={<Home />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;

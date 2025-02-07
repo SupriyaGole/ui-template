@@ -1,3 +1,4 @@
+import Navigation from "../Navigation/Navigation";
 import styles from "./Header.module.css";
 import viteLogo from "/vite.svg";
 
@@ -13,7 +14,9 @@ const Header = () => {
             </a>
           </div>
           <div className={styles.content}>
-            <div className={styles.contentBody}></div>
+            <div className={styles.contentBody}>
+              <Navigation />
+            </div>
           </div>
         </div>
       </div>

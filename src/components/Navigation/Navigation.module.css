@@ -1,0 +1,22 @@
+.nav {
+  /* background-color: #333;
+  padding: 1rem; */
+  display: flex;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  line-height: var(--nav-height);
+  font-size: 14px;
+  font-weight: 500;
+  /* text-decoration: none; */
+  color: var(--c-text-1);
+  /* font-size: 1rem;
+  transition: color 0.3s ease-in-out; */
+}
+
+.navLink:hover {
+  color: var(--c-brand-lighter);
+}
