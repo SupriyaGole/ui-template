@@ -3,6 +3,7 @@
   z-index: var(--z-index-footer);
   border-top: 1px solid #262626;
   background: radial-gradient(circle at top center, #0f151a 30%, #000 80%);
+  padding: 32px 24px;
 }
 
 .container {
