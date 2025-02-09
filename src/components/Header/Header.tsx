@@ -1,7 +1,6 @@
-import Navigation from "../Navigation/Navigation";
+import { Navigation, useTheme } from "@/components";
 import styles from "./Header.module.css";
 import viteLogo from "/vite.svg";
-import { useTheme } from "../ThemeProvider/ThemeProvider";
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme();
