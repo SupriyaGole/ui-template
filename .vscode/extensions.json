@@ -1,0 +1,7 @@
+{
+  "recommendations": ["biomejs.biome", "simonsiefke.svg-preview"],
+  "unwantedRecommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint"
+  ]
+}

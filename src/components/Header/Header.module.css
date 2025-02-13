@@ -3,13 +3,13 @@
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    color: var(--text-color);
-    max-width: calc(var(--layout-max-width) - var(--nav-height));
-    height: var(--nav-height);
-    pointer-events: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  color: var(--text-color);
+  max-width: calc(var(--layout-max-width) - var(--nav-height));
+  height: var(--nav-height);
+  pointer-events: auto;
 }
 
 .title {
