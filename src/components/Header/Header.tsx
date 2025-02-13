@@ -1,6 +1,6 @@
 import { Navigation, useTheme } from '@/components';
-import styles from './Header.module.css';
 import viteLogo from '/vite.svg';
+import styles from './Header.module.css';
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme();
@@ -18,7 +18,11 @@ const Header = () => {
           <div className={styles.content}>
             <div className={styles.contentBody}>
               <Navigation />
-              <button onClick={toggleTheme} className={styles.themeSwitch}>
+              <button
+                type='button'
+                onClick={toggleTheme}
+                className={styles.themeSwitch}
+              >
                 {theme === 'light' ? '🌙 Dark Mode' : '☀️ Light Mode'}
               </button>
             </div>
@@ -26,7 +30,7 @@ const Header = () => {
         </div>
       </div>
       <div className={styles.divider}>
-        <div className='divider-line'></div>
+        <div className='divider-line' />
       </div>
     </header>
   );

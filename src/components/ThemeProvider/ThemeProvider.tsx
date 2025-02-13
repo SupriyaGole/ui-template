@@ -1,9 +1,9 @@
 import {
+  type ReactNode,
   createContext,
   useContext,
   useEffect,
   useState,
-  ReactNode,
 } from 'react';
 
 // Context API

@@ -1,4 +1,4 @@
-import { Header, Footer, ThemeProvider } from '@/components';
+import { Footer, Header, ThemeProvider } from '@/components';
 import styles from './Layout.module.css';
 
 const Layout = ({ children }: { children: React.ReactNode[] }) => {
