@@ -4,7 +4,6 @@ const Home = () => {
   return (
     <Layout>
       <p>Content</p>
-      <p>Content 2</p>
     </Layout>
   );
 };

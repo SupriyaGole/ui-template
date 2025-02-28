@@ -33,7 +33,4 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
 };
 
 // Custom Hook
-export const useTheme = () => {
-  console.log(useContext(ThemeContext), "------context")
-  return useContext(ThemeContext);
-};
+export const useTheme = () => useContext(ThemeContext);
