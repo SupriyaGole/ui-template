@@ -1,6 +1,5 @@
-import { render, screen } from '@testing-library/react';
 import { ThemeProvider, useTheme } from '@/components';
-import { vi } from 'vitest';
+import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 // Mock localStorage
@@ -24,7 +23,9 @@ const TestComponent = () => {
   return (
     <div>
       <p>Current Theme: {theme}</p>
-      <button onClick={toggleTheme}>Toggle Theme</button>
+      <button type='button' onClick={toggleTheme}>
+        Toggle Theme
+      </button>
     </div>
   );
 };
@@ -34,7 +35,7 @@ describe('ThemeProvider', () => {
     render(
       <ThemeProvider>
         <p>Theme Provider Loaded</p>
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     expect(screen.getByText('Theme Provider Loaded')).toBeInTheDocument();
@@ -44,7 +45,7 @@ describe('ThemeProvider', () => {
     render(
       <ThemeProvider>
         <TestComponent />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     expect(screen.getByText('Current Theme: light')).toBeInTheDocument();
@@ -54,7 +55,7 @@ describe('ThemeProvider', () => {
     render(
       <ThemeProvider>
         <TestComponent />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     const button = screen.getByText('Toggle Theme');
@@ -67,7 +68,7 @@ describe('ThemeProvider', () => {
     render(
       <ThemeProvider>
         <TestComponent />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     const button = screen.getByText('Toggle Theme');

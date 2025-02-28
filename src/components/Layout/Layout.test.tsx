@@ -20,6 +20,8 @@ describe('Layout Component', () => {
 
     expect(screen.getByText('Test Content')).toBeInTheDocument();
     expect(screen.getByText('Header')).toBeInTheDocument();
-    expect(screen.getByText('Released under the MIT License.')).toBeInTheDocument();
+    expect(
+      screen.getByText('Released under the MIT License.'),
+    ).toBeInTheDocument();
   });
 });

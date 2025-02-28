@@ -4,7 +4,7 @@ import App from './App';
 
 // Mock Home Component
 vi.mock('@/components', () => ({
-  Home: () => <div data-testid="home-page">Home Page</div>,
+  Home: () => <div data-testid='home-page'>Home Page</div>,
 }));
 
 describe('App Routing', () => {
@@ -12,7 +12,7 @@ describe('App Routing', () => {
     render(
       <MemoryRouter initialEntries={['/']}>
         <App />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
     expect(screen.getByTestId('home-page')).toBeInTheDocument();
   });
@@ -21,7 +21,7 @@ describe('App Routing', () => {
     render(
       <MemoryRouter initialEntries={['/about']}>
         <App />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
     expect(screen.getByTestId('home-page')).toBeInTheDocument();
   });
@@ -30,7 +30,7 @@ describe('App Routing', () => {
     render(
       <MemoryRouter initialEntries={['/contact']}>
         <App />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
     expect(screen.getByTestId('home-page')).toBeInTheDocument();
   });

@@ -24,6 +24,12 @@
       "@/*": ["src/*"]
     }
   },
-  "include": ["src", "vitest.config.ts", "src/**/*.test.ts", "src/**/*.test.tsx", "src/setupTests.ts"], // 👈 Include test files explicitly
+  "include": [
+    "src",
+    "vitest.config.ts",
+    "src/**/*.test.ts",
+    "src/**/*.test.tsx",
+    "src/setupTests.ts"
+  ], // 👈 Include test files explicitly
   "exclude": ["node_modules", "dist"]
 }

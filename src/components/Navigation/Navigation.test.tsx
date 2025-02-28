@@ -7,7 +7,7 @@ describe('Navigation', () => {
     render(
       <MemoryRouter>
         <Navigation />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     expect(screen.getByText('Home')).toBeInTheDocument();
@@ -19,7 +19,7 @@ describe('Navigation', () => {
     render(
       <MemoryRouter>
         <Navigation />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     expect(screen.getByText('Home')).toHaveAttribute('href', '/');
