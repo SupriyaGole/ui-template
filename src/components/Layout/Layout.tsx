@@ -1,7 +1,7 @@
 import { Footer, Header, ThemeProvider } from '@/components';
 import styles from './Layout.module.css';
 
-const Layout = ({ children }: { children: React.ReactNode[] }) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <ThemeProvider>
       <div className={styles.layout}>
