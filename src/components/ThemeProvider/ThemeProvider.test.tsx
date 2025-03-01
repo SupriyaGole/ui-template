@@ -1,6 +1,6 @@
-import { ThemeProvider, useTheme } from '@/components';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import { ThemeProvider, useTheme } from './ThemeProvider';
 
 // Mock localStorage
 beforeEach(() => {

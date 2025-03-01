@@ -1,8 +1,9 @@
-import { Navigation, useTheme } from '@/components';
 import viteLogo from '/vite.svg';
+import { Navigation } from '../Navigation/Navigation';
+import { useTheme } from '../ThemeProvider/ThemeProvider';
 import styles from './Header.module.css';
 
-const Header = () => {
+export const Header = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
@@ -35,5 +36,3 @@ const Header = () => {
     </header>
   );
 };
-
-export default Header;

@@ -6,7 +6,7 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-    "types": ["vitest/globals", "vitest", "@testing-library/jest-dom", "node"], // 👈 Ensure globals are included
+    "types": ["vitest/globals", "vitest", "@testing-library/jest-dom"], // 👈 Ensure globals are included
     "moduleResolution": "node",
     "esModuleInterop": true,
     "allowImportingTsExtensions": true,

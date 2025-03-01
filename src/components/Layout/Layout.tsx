@@ -1,7 +1,9 @@
-import { Footer, Header, ThemeProvider } from '@/components';
+import { Footer } from '../Footer/Footer';
+import { Header } from '../Header/Header';
+import { ThemeProvider } from '../ThemeProvider/ThemeProvider';
 import styles from './Layout.module.css';
 
-const Layout = ({ children }: { children: React.ReactNode }) => {
+export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <ThemeProvider>
       <div className={styles.layout}>
@@ -12,5 +14,3 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     </ThemeProvider>
   );
 };
-
-export default Layout;

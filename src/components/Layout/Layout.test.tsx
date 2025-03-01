@@ -1,15 +1,17 @@
 import { render, screen } from '@testing-library/react';
-import Layout from './Layout';
+import { Layout } from './Layout';
 
-vi.mock('@/components', async () => {
-  const actual = await vi.importActual('@/components');
+vi.mock('../ThemeProvider/ThemeProvider', async () => {
+  const actual = await vi.importActual('../ThemeProvider/ThemeProvider');
 
   return {
     ...actual,
-    Header: () => <div>Header</div>,
     useTheme: () => ({ theme: 'light', toggleTheme: vi.fn() }),
   };
 });
+vi.mock('../Header/Header', () => ({
+  Header: () => <div>Header</div>,
+}));
 describe('Layout Component', () => {
   test('renders Layout correctly', () => {
     render(

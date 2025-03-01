@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
-import Home from './Home';
+import { Home } from './Home';
 
-vi.mock('@/components', () => ({
+vi.mock('../Layout/Layout', () => ({
   Layout: ({ children }: { children: React.ReactNode }) => (
     <div data-testid='layout'>{children}</div>
   ),

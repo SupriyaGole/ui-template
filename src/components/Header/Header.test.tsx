@@ -1,16 +1,18 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import Header from './Header';
+import { Header } from './Header';
 
 const mockToggleTheme = vi.fn();
-vi.mock('@/components', () => {
-  const actual = vi.importActual<typeof import('@/components')>('@/components');
+vi.mock('../Navigation/Navigation', () => ({
+  Navigation: () => <div>Navigation</div>,
+}));
+vi.mock('../ThemeProvider/ThemeProvider', () => {
+  const actual = vi.importActual('../ThemeProvider/ThemeProvider');
   return {
-    ...actual, // Preserve other exports like `Navigation`
+    ...actual,
     useTheme: () => ({
       theme: 'light',
       toggleTheme: mockToggleTheme,
     }),
-    Navigation: () => <div>Navigation</div>,
   };
 });
 
