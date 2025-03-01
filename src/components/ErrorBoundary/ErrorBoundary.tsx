@@ -28,9 +28,6 @@ class ErrorBoundary extends Component<
       return (
         <div className='error-message'>
           <h2>Oops! Something went wrong.</h2>
-          <button type='button' onClick={() => window.location.reload()}>
-            Reload
-          </button>
         </div>
       );
     }
