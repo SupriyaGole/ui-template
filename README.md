@@ -8,6 +8,7 @@ A simple and flexible UI template with essential features, including layout comp
 - **Dark & Light Mode**: Easily switch between themes.
 - **Navigation Tabs**: Pre-built tab navigation for seamless user experience.
 - **Test Coverage**: Uses Vitest and React Testing Library for reliable tests.
+- **Error Boundary**: Error boundry is added around main content
 
 ## Tech Stack
 

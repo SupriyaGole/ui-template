@@ -1,3 +1,4 @@
+import ErrorBoundary from '../ErrorBoundary/ErrorBoundary';
 import { Footer } from '../Footer/Footer';
 import { Header } from '../Header/Header';
 import { ThemeProvider } from '../ThemeProvider/ThemeProvider';
@@ -8,7 +9,9 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
     <ThemeProvider>
       <div className={styles.layout}>
         <Header />
-        <main className={styles.main}>{children}</main>
+        <main className={styles.main}>
+          <ErrorBoundary>{children}</ErrorBoundary>
+        </main>
         <Footer />
       </div>
     </ThemeProvider>
